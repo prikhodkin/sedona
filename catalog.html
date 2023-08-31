@@ -36,46 +36,86 @@
         <img src="#" width="10" height="10" alt="Домой">
         <img src="#" width="10" height="10" alt="Стрелка вправо">
         <p class="page-way">Гостинницы</p>
-          <form>
-            <ul class="hotels-infrastructure">
-              <h2>Инфраструктура:</h2>
-              <li class="hotels-infrastructure-list">
-                <input class="hotels-infrastructure-input" type="checkbox">
-                <p>Бассейн</p>
-              </li>
-              <li class="hotels-infrastructure-list">
-                <input class="hotels-infrastructure-input" type="checkbox">
-                <p>Парковка</p>
-              </li>
-              <li class="hotels-infrastructure-list">
-                <input class="hotels-infrastructure-input" type="checkbox">
-                <p>Wi-Fi</p>
-              </li>
-            </ul>
-            <ul class="hotels-infrastructure">
-              <h2>Тип жилья:</h2>
-              <li class="hotels-infrastructure-list">
-                <input class="hotels-infrastructure-input" type="radio">
-                <p>Гостинница</p>
-              </li>
-              <li class="hotels-infrastructure-list">
-                <input class="hotels-infrastructure-input" type="radio">
-                <p>Отель</p>
-              </li>
-              <li class="hotels-infrastructure-list">
-                <input class="hotels-infrastructure-input" type="radio">
-                <p>Апартаменты</p>
-              </li>
-            </ul>
-
-          </form>
-
+          <ul class="hotels-infrastructure">
+            <h2>Инфраструктура:</h2>
+            <li class="hotels-infrastructure-list">
+              <input class="hotels-infrastructure-input" type="checkbox">
+              <p>Бассейн</p>
+            </li>
+            <li class="hotels-infrastructure-list">
+              <input class="hotels-infrastructure-input" type="checkbox">
+              <p>Парковка</p>
+            </li>
+            <li class="hotels-infrastructure-list">
+              <input class="hotels-infrastructure-input" type="checkbox">
+              <p>Wi-Fi</p>
+            </li>
+          </ul>
+          <ul class="hotel-type">
+            <h2>Тип жилья:</h2>
+            <li class="hotel-type-list">
+              <input class="hotel-type-input" type="radio">
+              <p>Гостинница</p>
+            </li>
+            <li class="hotel-type-list">
+              <input class="hotel-type-input" type="radio">
+              <p>Отель</p>
+            </li>
+            <li class="hotel-type-list">
+              <input class="hotel-type-input" type="radio">
+              <p>Апартаменты</p>
+            </li>
+          </ul>
+          <ul class="hotel-cost">
+            <h2>Стоимость, ₽:</h2>
+            <li class="hotel-cost-list">
+              <form>
+                <input type="text" value="от">
+                <input type="text" value="до">
+                <input  type="range" min="0" max="9000" ">
+                <button>Применить</button>
+                <button>Сбросить</button>
+              </form>
+            </li>
+          </ul>
       </section>
       <section class="result">
-
+        <h3>Найдено гостинниц: 38</h3>
+        <select>
+          <option value="Сначала дешевые">
+            Сначала дешевые
+          </option>
+        </select>
+        <ul>
+          <li class="view">
+            <button type="button">
+              <img src="#" alt="Сетка" width="20" height="20">
+            </button>
+          </li>
+          <li class="view">
+            <button type="button">
+              <img src="№" alt="С картинкой" width="20" height="20">
+            </button>
+          </li>
+          <li class="view">
+            <button type="button">
+              <img src="№" alt="Списком" width="20" height="20">
+            </button>
+          </li>
+        </ul>
+        <ul class="card">
+          <li class="card-item">
+            <img src="#" width="50" height="50" alt="Amara Resort & Spa">
+            <h4>Amara Resort & Spa</h4>
+            <p>гостинница</p>
+            <p>От 3000 Р</p>
+            <a href="#">Подробнее</a>
+            <button>В Избранное</button>
+            <p>Рейтинг: 8,5</p>
+          </li>
+        </ul>
       </section>
       <section class="subscribe">
-
       </section>
     </main>
     <footer class="main-footer">
