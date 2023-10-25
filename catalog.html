@@ -3,12 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="main-header">
-      <a href="#">
-        <img src="#" height="100" width="100" alt="Логотип">
-      </a>
+      <div class="logo-cont">
+        <a class="logo" href="#">
+          <img src="/images/logo.png" height="70" width="138" alt="Логотип">
+        </a>
+      </div>
       <nav class="main-header-nav">
         <ul class="site-navigation">
           <li class="site-navigation-item">
@@ -21,21 +24,26 @@
             <a href="#">Гостинницы</a>
           </li>
         </ul>
-        <a href="#">
-          <img src="#" width="18" height="18" alt="Поиск">
-        </a>
-        <a href="#">
-          <img src="#" width="18" height="18" alt="Избранное">
-        </a>
-        <button>Хочу сюда!</button>
+        <div class="site-navigation-user">
+          <a href="#">
+            <img src="/images/icon/search.svg" width="18" height="18" alt="Поиск">
+          </a>
+          <a href="#">
+            <img src="/images/icon/heart.svg" width="18" height="18" alt="Избранное">
+          </a>
+          <button class="want">Хочу сюда!</button>
+        </div>
       </nav>
     </header>
     <main>
       <section class="hotels">
-        <h1>Гостиницы Седоны</h1>
-        <img src="#" width="10" height="10" alt="Домой">
-        <img src="#" width="10" height="10" alt="Стрелка вправо">
-        <p class="page-way">Гостинницы</p>
+        <h1 class="hotels-title-title">Гостиницы Седоны</h1>
+        <div class="hotels-title">
+          <img src="/images/home-2-page.svg" width="12" height="12" alt="Домой">
+          <img src="/images/nav-link 1.svg" width="5" height="6" alt="Стрелка вправо">
+          <p>Гостинницы</p>
+        </div>
+        <form class="hotels-form">
           <ul class="hotels-infrastructure">
             <h2>Инфраструктура:</h2>
             <li class="hotels-infrastructure-list">
@@ -51,33 +59,32 @@
               <p>Wi-Fi</p>
             </li>
           </ul>
-          <ul class="hotel-type">
+          <ul class="hotels-type">
             <h2>Тип жилья:</h2>
-            <li class="hotel-type-list">
+            <li class="hotels-type-list">
               <input class="hotel-type-input" type="radio">
               <p>Гостинница</p>
             </li>
-            <li class="hotel-type-list">
+            <li class="hotels-type-list">
               <input class="hotel-type-input" type="radio">
               <p>Отель</p>
             </li>
-            <li class="hotel-type-list">
+            <li class="hotels-type-list">
               <input class="hotel-type-input" type="radio">
               <p>Апартаменты</p>
             </li>
           </ul>
-          <ul class="hotel-cost">
+          <ul class="hotels-cost">
             <h2>Стоимость, ₽:</h2>
-            <li class="hotel-cost-list">
-              <form>
+            <li class="hotels-cost-list">
                 <input type="text" value="от">
                 <input type="text" value="до">
                 <input  type="range" min="0" max="9000" ">
                 <button>Применить</button>
                 <button>Сбросить</button>
-              </form>
             </li>
           </ul>
+        </form>
       </section>
       <section class="result">
         <h3>Найдено гостинниц: 38</h3>
@@ -160,38 +167,25 @@
             </div>
           </li>
         </ul>
-        <form>
           <button>Загрузить еще</button>
-        </form>
         <ul class="page">
           <li class="page-selector">
-            <form>
-              <button class="page-selector-choosed">1</button>
-            </form>
+              <a href="#" class="page-selector-choosed">1</a>
+          </li>
+          <li  class="page-selector">
+              <a href="#" class="page-selector-non">2</a>
           </li>
           <li class="page-selector">
-            <form>
-              <button class="page-selector-non">2</button>
-            </form>
+              <a href="#" class="page-selector-non">3</a>
           </li>
           <li class="page-selector">
-            <form>
-              <button class="page-selector-non">3</button>
-            </form>
+              <a href="#" class="page-selector-non">4</a>
           </li>
           <li class="page-selector">
-            <form>
-              <button class="page-selector-non">4</button>
-            </form>
+              <a href="#" class="page-selector-non">...</a>
           </li>
           <li class="page-selector">
-            <form>
-              <button class="page-selector-non">...</button>
-            </form>
-          </li><li class="page-selector">
-            <form>
-              <button class="page-selector-non">10</button>
-            </form>
+              <a href="#" class="page-selector-non">10</a>
           </li>
         </ul>
         <p>Гостинниц на странице:</p>
