@@ -19,6 +19,7 @@ h2 {
 h3 {
   font-size: 30px;
   line-height: 36px;
+  text-transform: uppercase;
 }
 html {
   width: 1200px;
@@ -31,7 +32,7 @@ body {
   max-width: 1200px;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 21px;
   color: #000;
   background-color: #fff;
@@ -45,6 +46,7 @@ body {
   left: 0;
   right: 0;
   text-align: center;
+  z-index: 5;
 }
 .main-header-nav {
   width: 1060px;
@@ -56,10 +58,10 @@ body {
 }
 .site-navigation {
   margin: 0;
-  width: 309px;
+  width: 310px;
   display: flex;
   justify-content:space-between;
-  padding: 19px 0 20px 0;
+  padding: 19px 0 25px 0;
   list-style-type: none;
 }
 .site-navigation a {
@@ -74,7 +76,7 @@ site-navigation-user {
 
 }
 .site-navigation-user-icon {
-  margin-right: 20px;
+  margin-right: 23px;
   text-decoration: none;
 }
 .want {
@@ -89,7 +91,6 @@ site-navigation-user {
   text-transform: uppercase;
   padding: 0;
 }
-/* Почему лупа и сердечка не посередине? */
 /* ПЕРВАЯ СТРАНИЧКА */
 .hero {
   background-image: url("/images/index-background.jpg");
@@ -98,6 +99,13 @@ site-navigation-user {
 .hero-welcome {
   display: flex ;
   margin: 0 auto;
+}
+
+img.hero-welcome {}
+
+img.hero-welcome {
+    padding-top: 11px;
+    padding-bottom: 42px;
 }
 .hero::before {
   display: block;
@@ -112,7 +120,9 @@ site-navigation-user {
 .title {
   text-align: center;
   width: 720px;
-  margin: 63px auto 79px auto;
+  margin: 0 auto;
+  padding-top: 63px;
+  padding-bottom: 79px;
 }
 .title h1 {
   text-transform: uppercase;
@@ -120,103 +130,96 @@ site-navigation-user {
   font-weight: 700;
   line-height: 36px;
   margin: 0;
-  margin-bottom: 23px;
+  padding-bottom: 23px;
 }
 .title p {
   margin: 0;
+  line-height: 36px;
   font-size: 22px;
 }
+
 /* основное содержание */
 .advantages-list {
-  list-style-type: none;
-  display: flex;
   margin: 0;
   padding: 0;
 }
 .advantages-description {
+    list-style-type: none;
+}
+.advantages-description-block {
+  display: flex;
+}
+.advantages-first-position {
+  display: flex;
+  list-style-type: none;
+}
+.advantages-description-title {
   width: 400px;
   text-align: center;
   background: #83B3D3;
   color: #fff;
+  padding-top: 98px;
+  padding-bottom: 77px;
+  padding-left: 90px;
+  padding-right: 90px;
 }
-.advantages-description h2 {
-  margin-top: 98px;
-  margin-bottom: 25px;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 24px;
-  line-height: 28px;
-  width: 160px;
-}
-.advantages-description p {
+.advantages-description-title p {
   width: 220px;
   margin: 0;
-  margin-bottom: 26px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 25px;
 }
-.advantages-description :last-child {
-  margin-bottom: 77px;
+.advantages-description-title h2 {
+  margin: 0;
+  width: 220px;
+  line-height: 28px;
+  margin-bottom: 25px;
 }
-/* ПОчему высота 388px??? */
+.advantages-description-title :first-child {
+  margin-top: 0;
+}
+.advantages-description-title :last-child {
+  margin-bottom: 0;
+}
 .advantages-first-position {
-  width: 1200px;
-  margin: 0;
   padding: 0;
-  list-style-type: none;
-  display: flex;
-  text-align: center;
-  justify-content: space-between;
+
 }
-.advantages-first-position li {
+.advantages-first-position-block {
   width: 400px;
+  padding-top: 89px;
+  padding-bottom: 79px;
+  padding-left: 75px;
+  padding-right: 75px;
+  text-align: center;
 }
-.advantages-first-position img {
-margin-top: 89px;
-margin-bottom: 23px;
+.advantages-first-position-block h2 {
+  margin-top: 25px;
 }
-.advantages-first-position h2 {
-  margin: 0;
-  margin-bottom: 20px;
+.advantages-first-position-block :first-child {
+  margin-top: 0;
 }
-.advantages-first-position p:last-child {
-  width: 250px;
-  margin-bottom: 79px;
-  margin-left: auto;
-  margin-right: auto;
+.advantages-first-position-block :last-child {
+  margin-bottom: 0;
 }
 .advantages-first-position-grey {
   background-color: #83B3D31F;
 }
-.advantages-first-position-2 h2 {
-margin: 0;
-margin-top: 98px;
-margin-bottom: 25px;
-margin-left: auto;
-margin-right: auto;
-width: 150px;
-line-height: 28px;
-}
-.advantages-first-position-2 p {
-  margin: 0;
-  margin-bottom: 26px;
+.advantages-description-block-change {
+  flex-direction: row-reverse;
 }
 /* поиск */
 .search {
   text-align: center;
+  padding: 91px 312px;
 }
 .search h3 {
-  text-transform: uppercase;
-  margin: 0;
-  margin-top: 91px;
-  margin-bottom: 15px;
+  line-height: 38px;
+  margin-bottom: 45px;
 }
 .search p {
-  width: 720px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 63px;
+  width: 600px;
   font-size: 26px;
+  margin: 70px 0;
 }
 .search button {
   width: 575px;
@@ -229,27 +232,26 @@ line-height: 28px;
   border-radius: 10px;
   border: 0;
   text-transform: uppercase;
-  padding: 0;
-  margin-bottom: 91px;
+}
+.search :first-child {
+  margin-top: 0;
+}
+.search :last-child {
+  margin-top: 0;
 }
 /* Подписка на рассылку */
 .mailing {
   text-align: center;
   background-image: url("/images/background.jpg");
   color: #fff;
+  padding: 94px 200px;
+
 }
 .mailing h3 {
-  text-transform: uppercase;
-  margin: 0;
-  padding-top: 94px;
-  margin-bottom: 15px;
+  margin: 45px 0;
 }
 .mailing p {
-  width: 500px;
-  margin: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 56px;
+  margin: 26px 120px;
   font-size: 22px;
   line-height: 26px;
 }
@@ -261,6 +263,15 @@ line-height: 28px;
   line-height: 26px;
   border-radius: 10px 0 0 10px;
   border: 0;
+}
+.mailing-form {
+  margin: 30px 0;
+}
+.mailing :first-child{
+  margin-top: 0;
+}
+.mailing :last-child {
+  margin-bottom: 0;
 }
 .sbscribe {
   width: 200px;
@@ -274,18 +285,24 @@ line-height: 28px;
   border-radius: 0 10px 10px 0;
   border: 0;
   margin-left: -5px;
-  margin-bottom: 91px;}
+}
 /* ФУТЕР */
+
 .main-footer {
   display: flex;
   justify-content: space-between;
+  padding: 40px 72px 40px 72px;
+
+}
+.main-footer :first-child {
 }
 .social-list {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 110px;
   list-style-type: none;
-  margin: 50px 0px 55px 72px;
+  margin: 0;
   padding: 0;
 }
 .tel {
@@ -295,9 +312,7 @@ line-height: 28px;
   text-transform: uppercase;
   color: inherit;
   text-decoration: none;
-  margin-top: 40px;
-  }
+}
 .social-list-link {
-  width: 115px;
-  margin: 42px 72px 44px 0;
+  margin: 0;
 }
